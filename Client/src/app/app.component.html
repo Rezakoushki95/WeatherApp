@@ -2,8 +2,12 @@
   <div [ngClass]="containerClass" class="container">
     <div class="upper-section">
       <img [src]="isCold ? '../assets/cold.jpg' : '../assets/hot.jpg'" />
+      <div class="weather-data">
+        <div class="location">Aarhus</div>
+        <div class="temperature">{{ 14.4 | number : "1.0-0" }}°C</div>
+      </div>
     </div>
-    <div class="weather-data"></div>
+    C
     <div class="lower-section"></div>
   </div>
   <router-outlet></router-outlet>
